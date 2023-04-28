@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+   body {
+      font-family: Arial, Helvetica, sans-serif;
+   }
+   .popUp {
+      text-align: center;
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: lightgrey;
+   }
+   .popupContent {
+      font-size: 30px;
+      font-weight: bold;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+   }
+   .close {
+      color: rgb(255, 65, 65);
+      float: right;
+      font-size: 40px;
+      font-weight: bold;
+   }
+   .close:hover, .close:focus {
+      color: #ff1010;
+      cursor: pointer;
+   }
+   .openPopUp{
+      width: 160px;
+      height: 50px;
+      background: green;
+   }
+</style>
+</head>
+<body>
+
+<center><button class="openPopUp">Open Popup</button></center>
+
+<div class="popUp">
+<div class="popupContent">
+<span class="close">×</span>
+<p>Welcome learner</p>
+</div>
+</div>
+<script>
+   var popUp = document.querySelector(".popUp");
+   var btn = document.querySelector(".openPopUp");
+   var span = document.querySelector(".close");
+   btn.addEventListener("click", () => {
+      popUp.style.display = "block";
+   });
+   span.addEventListener("click", () => {
+      popUp.style.display = "none";
+   });
+   window.onclick = function(event) {
+      if (event.target == popUp) {
+         popUp.style.display = "none";
+      }
+   };
+</script>
+</body>
+</html>

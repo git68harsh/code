@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="knobot.jpeg" type="icon/x-icon">
+	<title>REGISTERED USER</title>
+	<style>
+
+		* {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+        .background {
+            background: darkslategrey;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img {
+            width: 50px;
+            border-radius: 50px;
+        }
+        .nav-list li {
+            list-style: none;
+            padding: 26px 15px;
+        }
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+        }
+        .nav-list li a:hover {
+         
+            color: grey;
+        }
+ 		.rightnav {
+            width: 30%;
+            text-align: right;
+        }
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+        * body {
+            background-image: url(https://cdn.wallpapersafari.com/98/24/usMT18.jpg);
+        }
+        .form h1{
+            padding: 5px;
+            margin: 0px;
+            font-size: 30px;
+
+        }
+        .form h2{
+            font-size: 20px;
+
+        }
+        .form h3{
+            padding: 10px;
+            margin: 0px;
+        }
+        input[type=text], input[type=password] {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: solid;
+  background: #f1f1f1;
+  padding: 8px 20px;
+}
+
+
+.block{
+    text-align: center;
+}
+
+.registerbtn {
+  width: 43%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: solid;
+  background: grey;
+  cursor: pointer;
+  padding: 8px 20px;
+
+
+
+
+}
+
+.registerbtn:hover {
+  color: green;
+}
+
+        
+	</style>
+</head>
+<body>
+		<nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src= "knobot.jpeg">
+            </div>
+            <li><a href="#web">HTML</a></li>
+
+            <li><a href="#program">CSS</a></li>
+            <li><a href="#course">JAVASCRIPT</a></li>
+            <li><a href="#course">SQL</a></li>
+            <li><a href="#course">PYTHON</a></li>
+            <li><a href="#course">JAVA</a></li>
+            <li><a href="#course">BOOTSTRAP</a></li>
+            <li><a href="#course">PROJECT</a></li>
+        </ul>
+ 		<div class="rightNav">
+            <input type="text" placeholder="search" id="search" name="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        
+        	
+        	</nav>
+            <div class="block">
+            <form action="connect.php" method="post">
+            <form class="form">
+                <h1>Register</h1>
+                <h2>Please fill this form to create an account</h2><hr style="width:27%;text-align:center;margin-left:501px">
+                <h3>Username:</h3>
+                <input type="text" placeholder="Enter Username" name="Username" id="email" >
+                <h3>Phone No:</h3>
+                <input type="text" placeholder="Phone No" name="phone " id="email" >
+                <h3>E-mail:</h3>
+                <input type="text" placeholder="Enter E-mail" name="email" id="email" >
+                <h3>password:</h3>
+                <input type="text" placeholder="Enter password" name="email" id="email" >
+                <center><button type="submit" class="registerbtn"><b>Register</b></button></center>
+  </div>
+<center><p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p></center>
+                <center><p>If account exist the click on <a href="signin.html">sign in</a></p></center>
+            </form>
+            </form>
+        </div>
+</body>
+</html>

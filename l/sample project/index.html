@@ -1,0 +1,634 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <link rel="icon" href="knobot.jpeg" type="icon/x-icon">
+    <title>KNOBOT WEB TECHNOLOGY </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/v4/icons/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            
+        }
+        .background {
+            background: darkslategrey;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img {
+            width: 50px;
+            border-radius: 50px;
+        }
+        .nav-list li {
+            list-style: none;
+            padding: 26px 15px;
+        }
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+        }
+        .nav-list li a:hover {
+         
+            color: grey;
+        }
+ 		.rightnav {
+            width: 30%;
+            text-align: right;
+        }
+        #search {
+            padding: 4px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+        .firstsection {
+            background-color: #4b1223;
+            height: 400px;
+        }
+        .secondsection {
+            background-color: #e1c699;
+            height: 400px;
+        }
+        .box-main {
+            display: flex;
+            justify-content: ;
+            align-items: center;
+            color: white;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: ;
+        }
+        .secondhalf {
+            width: 30%;
+        } 
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        .text-small {
+            font-size: 18px;
+        }
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            margin: 0px;
+            background-color: yellow;
+        }
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+        .paras {
+            padding: 0px 65px;
+        }
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+        .center {
+            text-align: center;
+        }
+        .text-footer {
+            text-align: left;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;   
+            color: white;
+        }
+        
+        .button{
+	        background-color: #4CAF50;
+	  		border-style: none;
+	  		color: white;
+	  		padding: 2px 20px;
+	  		text-align: center;
+	  		text-decoration: none;
+	  		display: inline-block;
+	  		font-size: 16px;
+	  		margin: 2px 4px;
+	  		cursor: pointer;
+	    	border-bottom: 2px lightgreen;
+	    	border-radius: 25px;
+		}
+			.marquee{
+			font-size: 30px;
+			color: dark brown;
+		}
+			.container{
+			max-width: 1100px;
+			text-align: center;
+			margin: 0 auto;
+			padding: 0 3rem;
+		}
+			footer .footer-cols{
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(4,1fr);
+			padding: 2rem;
+			text-align: left;
+			font-size: 14px;
+			color: darkred;
+		}
+	 		footer .footer-cols ul{
+			list-style-type: none;
+		}
+			.footer-cols a{
+			text-decoration: none;
+			color: black;
+			font-size: 16px;
+		}
+			footer .footer-cols ul li:first-child{
+			font-size: 1.2rem;
+			padding-bottom: 0.10rem;
+			border-bottom: #444 solid 1px;
+			margin-bottom: 1rem;
+			text-decoration: none;
+			color: dark red;
+		}
+		.form a{
+			text-decoration: none;
+			color: white;
+			list-style-type: none;
+			font-size: 17px;
+			padding: 10px;
+
+		}
+		.form a:hover{
+		color: grey;	
+		}
+        </style>
+</head>
+ 
+<body>
+
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <a href="index.html"><img src= "knobot.jpeg"></a>
+            </div>
+            <li><a href="html.html">HTML</a></li>
+
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="html.html">JAVASCRIPT</a></li>
+            <li><a href="html.html">SQL</a></li>
+            <li><a href="html.html">PYTHON</a></li>
+            <li><a href="html.html">JAVA</a></li>
+            <li><a href="html.html">BOOTSTRAP</a></li>
+            <li><a href="html.html">PROJECT</a></li>
+        </ul>
+ 		<div class="rightNav">
+            <input type="text" placeholder="search" id="search" name="search" onkeyup="search courses">
+            </div>
+        	<div class="form">
+            	<a href="#page">Login</a>
+            </div>
+        	<div class="form">
+        	<a href="login .html">SignUp</a>
+        	</div>
+
+        
+    </nav>
+    
+<style>
+   body {
+      font-family: Arial, Helvetica, sans-serif;
+   }
+   .popUp {
+      text-align: center;
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: none;
+   }
+   .popupContent {
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+      background-color: darkslategrey;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+   }
+   .close {
+      color: white;
+      float: right;
+      font-size: 40px;
+      font-weight: bold;
+   }
+   .close:hover, .close:focus {
+      color: #ff1010;
+      cursor: pointer;
+   }
+   .openPopUp{
+    float: left;
+    font-size: 20px;
+    color: white;
+      width: 160px;
+      height: 40px;
+      background: green;
+      border-radius: 25px;
+      font-family: serif;
+   }
+   
+</style>
+</head>
+<body>
+
+<button class="openPopUp">Hey Dude</button> <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+
+<div class="popUp">
+<div class="popupContent">
+<span class="close">×</span>
+<p>Learn Code with KNOBOT</p>
+<p>With the world's largest web developer site.</p>
+</div>
+</div>
+<script>
+   var popUp = document.querySelector(".popUp");
+   var btn = document.querySelector(".openPopUp");
+   var span = document.querySelector(".close");
+   btn.addEventListener("click", () => {
+      popUp.style.display = "block";
+   });
+   span.addEventListener("click", () => {
+      popUp.style.display = "none";
+   });
+   window.onclick = function(event) {
+      if (event.target == popUp) {
+         popUp.style.display = "none";
+      }
+   };
+</script>
+
+    <div class="opacity">
+        
+    <img src="backimage.jpg" alt="Trulli" width="1300" height="500" >
+        
+    </div>
+    <section class="firstsection">
+            <style>
+#mySidenav a {
+  position: fixed;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 120px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 180px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 240px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 300px;
+  background-color: #555
+}
+</style>
+</head>
+<body>
+    
+
+   <div id="mySidenav" class="sidenav">
+  <a href="https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp" id="about">About</a>
+  <a href="#" id="blog">Blog</a>
+  <a href="#" id="projects">Projects</a>
+  <a href="#" id="contact">Contact</a>
+</div>
+<div style="margin-left:100px;">
+
+</div>
+
+
+        <div class="box-main">
+            <div class="firstHalf">
+
+                <h1 class="text-big" id="web">INTRODUCTION</h1><hr><br>
+                <p class="text-small">
+                    If you’re like most of us, you’ve been using the Web for a while. But have you ever thought about what goes on behind the scenes when you’re working on the Web? Have you ever wondered about the various web technologies working to give you a seamless and superior experience? Probably not…Well, this guide will tell you more about all of the different web technologies as well as what the future holds…
+                </p>
+ <div class="button">
+<button class="button"><a href="intro.html">INTRODUCTION</a></button>
+</div>
+             </div>
+        </div>
+    </section>
+
+     <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="program">
+                    HTML[Hyper text markup language]
+                </h1><hr><br>
+                <p class="text-small">
+                    HTML stands for HyperText Markup Language.
+                    It is used to design web pages using a markup
+                    language. HTML is the combination of Hypertext
+                    and Markup language. Hypertext defines the
+                    link between the web pages. A markup language
+                    is used to define the text document within tag
+                    which defines the structure of web pages.
+                    HTML is a markup language that is used by the
+                    browser to manipulate text, images, and other
+                    content to display it in the required format.
+                </p>
+                <div class="button">
+<button class="button"><a href="html.html">LETS LEARN</a></button>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">CSS[Cascading Style Sheets]</h1><hr><br>
+                <p class="text-small">
+                	                   CSS is acronym of Cascading Style Sheets. It helps to define the presentation of HTML elements as a separate file known as CSS file having .css extension.
+CSS helps to change formatting of any HTML element by just making changes at one place. All changes made would be reflected automatically to all of the web pages of the website in which that element appeared.
+                </p>
+ 					<div class="button">
+<button class="button">LETS LEARN</button>
+</div>
+             </div>
+        </div>
+    </section>
+<section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="program">
+                    JAVASCRIPT
+                </h1><hr><br>
+                <p class="text-small">
+                    JavaScript is a very flexible object-oriented language when it comes to syntax. In this article you can find three ways of defining and instantiating an object. Even if you have already picked your favorite way of doing it, it helps to know some alternatives in order to read other people's code.
+                </p>
+                <div class="button">
+<button class="button">LETS LEARN</button>
+</div>
+             </div>
+        </div>
+    </section>
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+               <h1 class="text-big" id="web">PHP[Hypertext Preprocessor]</h1><hr><br>
+                <p class="text-small">
+                	                    The term PHP is an acronym for PHP: Hypertext Preprocessor. PHP is a server-side scripting language designed specifically for web development. It is open-source which means it is free to download and use. It is very simple to learn and use. The files have the extension “.php”. 
+Rasmus Lerdorf inspired the first version of PHP and participated in the later versions. It is an interpreted language and it does not require a compiler. 
+                </p>
+ 					<div class="button">
+<button class="button">LETS LEARN</button>
+</div>
+             </div>
+        </div>
+    </section>
+   <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="program">
+                   PYTHON
+                </h1><hr><br>
+                <p class="text-small">
+                    Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC programming language, which was inspired by SETL, capable of exception handling and interfacing with the Amoeba operating system. Its implementation began in December 1989. Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his "permanent vacation" from his responsibilities as Python's "benevolent dictator for life", a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker. In January 2019, active Python core developers elected a five-member Steering Council to lead the project.
+                </p>
+                <div class="button">
+<button class="button">LETS LEARN</button>
+</div>
+             </div>
+        </div>
+    </section>
+   <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+               <h1 class="text-big" id="web">JAVA</h1><hr><br>
+                <p class="text-small">
+                    JAVA was developed by James Gosling at Sun Microsystems Inc in the year 1995, later acquired by Oracle Corporation. It is a simple programming language. Java makes writing, compiling, and debugging programming easy. It helps to create reusable code and modular programs. Java is a class-based, object-oriented programming language and is designed to have as few implementation dependencies as possible. A general-purpose programming language made for developers to write once run anywhere that is compiled Java code can run on all platforms that support Java.
+                </p>
+ <div class="button">
+<button class="button">LETS LEARN</button>
+</div>
+             </div>
+        </div>
+    </section>
+   <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="program">
+                    SQL[ Structured Query Language]
+                </h1><hr><br>
+                <p class="text-small">
+                  SQL is Structured Query Language, which is a computer language for storing, manipulating and retrieving data stored in a relational database.
+SQL is the standard language for Relational Database System. All the Relational Database Management Systems (RDMS) like MySQL, MS Access, Oracle, Sybase, Informix, Postgres and SQL Server use SQL as their standard database language.  
+                </p>
+                <div class="button">
+<button class="button">LETS LEARN</button>
+</div>
+             </div>
+        </div>
+    </section>
+<section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+               <h1 class="text-big" id="web">C Sharp</h1><hr><br>
+                <p class="text-small">
+                    C Sharp is a general-purpose, modern and object-oriented programming language pronounced as “C sharp”. It was developed by Microsoft led by Anders Hejlsberg and his team within the .Net initiative and was approved by the European Computer Manufacturers Association (ECMA) and International Standards Organization (ISO). C# is among the languages for Common Language Infrastructure and the current version of C# is version 7.2. C# is a lot similar to Java syntactically and is easy for the users who have knowledge of C, C++ or Java.
+                </p>
+ 					<div class="button">
+<button class="button">LETS LEARN</button>
+</div>
+ </div>
+        </div>
+    </section>
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="program">
+                    Ruby
+                </h1><hr><br>
+                <p class="text-small">
+                    Introduction to Ruby Ruby is an object-oriented programming language developed by Yukihiro Matsumoto. Ruby is a dynamic programming language with a complex but at the same time expressive grammar. Ruby also has a core class library with a rich and powerful API.
+                </p>
+                <div class="button">
+<button class="button">LETS LEARN</button>
+</div>
+           </div>
+        </div>
+        <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+               <h1 class="text-big" id="web">Web Templates</h1><hr><br>
+               <div class="left ">
+                <img src="collectionimage.jpeg" alt="Trulli" width="1100" height="230" >
+                <button class="button">BROWSE MORE</button>
+                </div>
+                <style>
+                    .left {
+                        
+                    }
+                </style>
+ </div>
+        </div>
+    </section>
+
+
+ 	<footer>
+		<div class="container">
+			<div class="footer-cols">
+				<ul>
+					<li> KNOW ABOUT US</li>
+					<li>
+						<a href="#">INFO ABOUT US</a>
+					</li>
+					<li>
+						<a href="#">CARRIER</a>
+					</li>
+					<li>
+						<a href="#">FAQ</a>
+					</li>
+					<li>
+						<a href="#">CORPORATE</a>
+					</li>
+					<li>
+						<a href="#">WHOLESALE</a>
+					</li>
+				</ul>
+				<ul>
+					<li> LET US HELP YOU</li>
+					<li>
+						<a href="#">YOUR ACCOUNT</a>
+					</li>
+					<li>
+						<a href="#">RETURN CENTER</a>
+					</li>
+					<li>
+						<a href="#">100% SAFETY</a>
+					</li>
+					<li>
+						<a href="#">APP DOWNLOAD</a>
+					</li>
+					<li>
+						<a href="#">HELP</a>
+					</li>
+				</ul>
+				<ul>
+					<li> JOIN US</li>
+					<li>
+						<a href="#">FACEBOOK</a>
+					</li>
+					<li>
+						<a href="#">INSTAGRAM</a>
+					</li>
+					<li>
+						<a href="#">TWITTER</a>
+					</li>
+					<li>
+						<a href="#">TELEGRAM</a>
+					</li>
+					<li>
+						<a href="#">161-5675438</a>
+					</li>
+				</ul>
+				<ul>
+					<li> POLICY </li>
+					<li>
+						<a href="#">RETURN POLICY</a>
+					</li>
+					<li>
+						<a href="#">TERMS OF USE</a>
+					</li>
+					<li>
+						<a href="#">PRIVACY</a>
+					</li>
+					<li>
+						<a href="#">SITEMAP</a>
+					</li>
+					<li>
+						<a href="#">SECURITY</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <footer class="background">
+        <p class="text-footer">
+         Copyright ©-All rights are reserved
+        </p>
+     </footer>
+</body>
+ </html>
